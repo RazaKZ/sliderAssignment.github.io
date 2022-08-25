@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Amazing Slider</title>
+
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-color: rgb(37, 48, 56);
+    }
+    
+    .nav {
+        text-align: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.247);
+        height: 50px;
+    }
+    
+    .child {
+        padding: 1%;
+    }
+    
+    .parent {
+        display: flex;
+        border: 2px wheat;
+    }
+    
+    marquee {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: azure;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 13%;
+        /* margin-top: 20%; */
+    }
+    
+    .para {
+        color: azure;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<body>
+
+    <div class="nav">
+        <br>
+        <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Home </a>
+            <a href=""> About </a>
+            <a href=""> Services </a>
+            <a href=""> Contact US </a> </b>
+    </div>
+    <br> <br><br><br>
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 0px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/fish2.jpg" alt="planted aquarium" title="planted aquarium" data-description="Discuss is a planted aquarium fish" />
+                </li>
+                <li><img src="images/freshWater.jpg" alt="Fresh Water fish" title="Fresh Water fish" data-description="Cichlids are  fresh Water fish" />
+                </li>
+                <li><img src="images/saltwater.jpg" alt="Saltwater" title="Saltwater" data-description="Orage marine fish is live in saltwater aquarium reef tank" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/fish2-tn.jpg" alt="planted aquarium" title="planted aquarium" /></li>
+                <li><img src="images/freshWater-tn.jpg" alt="Fresh Water fish" title="Fresh Water fish" /></li>
+                <li><img src="images/saltwater-tn.jpg" alt="Saltwater" title="Saltwater" /></li>
+            </ul>
+            <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Slider">Responsive jQuery Slider</a></div>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+
+    <div>
+
+    </div>
+    <br><br><br><br>
+    <marquee width="60%" direction="right" height="100px">
+        All types of fishes caring knowledge you get our website
+    </marquee>
+    <br><br><br><br>
+    <div class="parent">
+        <div class="child"><img src="fish1.jpg" alt="" srcset=""></div>
+        <div class="chil2">
+            <p class="para">Planted tanks are a popular and rapidly growing segment of the aquarium hobby, one that allows hobbyists to combine the beauty of nature with the benefits of a balanced ecosystem. Unlike a traditional aquarium, live plants are the primary
+                focus, with fish being an accent or compliment to the overall effect.</p>
+        </div>
+    </div>
+</body>
+
+</html>
